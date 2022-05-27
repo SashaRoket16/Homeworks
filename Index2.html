@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Домашня Робота</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var x = 6
+var y = 14
+var z = 4
+var k1 = x +=y - x++ *z;/*Першим виконується - +=y,Другим - *z,Третім - x++, Четвертим - , П'ятим - .*/
+var x = 6
+var y = 14
+var z = 4
+var k2 = z = --x - y * 5;
+/*Першим виконується - x - y,Другим - y * 5,Третім -  --x , Четвертим - , П'ятим - .*/
+var x = 6
+var y = 14
+var z = 4
+var k3 = y /=x + 5 % z;
+/*Першим виконується - /=x,Другим - x + 5,Третім - 5 % z, Четвертим - , П'ятим - .*/
+var x = 6
+var y = 14
+var z = 4
+var k4 = z - x++ + y * 5;
+/*Першим виконується - z - x,Другим - + y,Третім - x++, Четвертим - , П'ятим - .*/
+var x = 6
+var y = 14
+var z = 4
+var k5 = x = y - x++ * z;
+/*Першим виконується - x = y,Другим - y - x,Третім - x++ , Четвертим - , П'ятим - .*/
+var x = 6
+var y = 14
+var z = 4
+document.write(k1);
+document.write("</br>");
+document.write(k2);
+document.write("</br>");
+document.write(k3);
+document.write("</br>");
+document.write(k4);
+document.write("</br>");
+document.write(k5);
+
+
+
+
+</script>
+</body>
+</html>
